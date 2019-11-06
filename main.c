@@ -62,7 +62,6 @@ int main(void)
     SERIAL1_Initialize();
     RGB_RED_LED1_Initialize();
     RGB_GREEN_LED1_Initialize();
-    printf("Hello!  I'm alive!\n");
     while (1)
     {
         // Add your application code
