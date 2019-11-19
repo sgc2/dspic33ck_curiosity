@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=dspic33ck curiosity.X
+PROJECTNAME=dspic33ck_curiosity
 
 # Active Configuration
 DEFAULTCONF=default

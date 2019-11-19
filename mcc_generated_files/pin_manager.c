@@ -68,13 +68,13 @@ void PIN_MANAGER_Initialize (void)
     LATA = 0x0000;
     LATB = 0x0000;
     LATC = 0x0000;
-    LATD = 0x0000;
+    LATD = 0x0010;
     LATE = 0x0000;
 
     /****************************************************************************
      * Setting the GPIO Direction SFR(s)
      ***************************************************************************/
-    TRISA = 0x001F;
+    TRISA = 0x0017;
     TRISB = 0xFFFD;
     TRISC = 0xFFFF;
     TRISD = 0xFFEF;

@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/dspic33ck_curiosity.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=dspic33ck_curiosity.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=dspic33ckcuriosity.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/dspic33ck_curiosity.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=dspic33ck_curiosity.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=dspic33ckcuriosity/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/dspic33ckcuriosity.x/bin
+makeDirectory ${TMPDIR}/dspic33ckcuriosity/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/dspic33ckcuriosity.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/dspic33ckcuriosity.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/dspic33ckcuriosity.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/dspic33ckcuriosity.tar *
 checkReturnCode
 
 # Cleanup

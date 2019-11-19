@@ -1,0 +1,4 @@
+Dev	Pin	Reg	Name
+J1-20	21	A3	DAC1 output
+J1-22	35	B0	REF01 25MHz
+J1-12	30	C6	MCCP9 capture - 1pps
